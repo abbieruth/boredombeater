@@ -6,8 +6,7 @@ function getActivity() {
     .then(res => res.json()) // parse as JSON
     .then(data => {
         console.log(data)
-        document.querySelector('h2').innerText = data.activity
-        document.querySelector('h3').innerText = data.type
+        document.querySelector('#activity').innerText = data.activity
         document.querySelector('#participants').innerText = `${data.participants} participant(s) needed`
     })
     .catch(err => {
