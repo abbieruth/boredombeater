@@ -2,7 +2,7 @@ document.querySelector('button').addEventListener('click', getActivity)
 
 function getActivity() {
     let type = document.querySelector('input').value.toLowerCase();
-    fetch(`https://www.boredapi.com/api/activity?type=${type}`)
+    fetch(`http://www.boredapi.com/api/activity?type=${type}`)
     .then(res => res.json()) // parse as JSON
     .then(data => {
         console.log(data);
