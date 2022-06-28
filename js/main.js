@@ -12,5 +12,5 @@ function getActivity() {
     .catch(err => {
         console.log(`error ${err}`);
     })
-
+    alert("I'm sorry. Due to technical difficulties, we are not able to display this information at this time.")
 }
